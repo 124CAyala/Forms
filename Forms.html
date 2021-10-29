@@ -6,8 +6,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <style>
+      #rcorners{
+        border: 1px solid;
+        border-radius: 10px;
+        width: 200px;
+        height: 30px;
+      }
+      th{
+        text-align: left;
+        width: 200px;
+        height:20px;
+        padding-right: 25px;
+      }
+
       body{background-color: #09D2E8;
         font-family:'Roboto Slab', serif;
+        color:white;
         font-weight: 400;
       }
       h1 {
@@ -19,20 +33,24 @@
     <h1>Create An Account</h1>
     <table>
       <tr>
-        <th style="text-align:left;">First Name</th>
-        <th style="text-align:left;">Last Name</th>
+        <th style="text-align: left;">First Name</th>
+        <th style="text-align: left;">Last Name</th>
       </tr>
       <tr>
-        <th><input type="text" id="fname" name="fname"></th>
-        <th><input type="text" id="lname" name="lname"></th>
+        <th><input type="text" id="rcorners" name="fname"></th>
+        <th><input type="text" id="rcorners" name="lname"></th>
       <tr>
       <tr>
-        <th style="text-align:left;">E-mail</th>
-        <th> Are You 13+ Years Old?</th>
+        <th style="text-align: left;">E-mail</th>
+        <th style="text-align: left;"> Are You 13+ Years Old?</th>
       </tr>
       <tr>
-        <th><input type="text" id="email" name="email"></th>
+        <th><input type="text" id="rcorners" name="email"></th>
         <th><input type="radio" id="yes" name="yes" value="yes"><label for="yes">Yes</label><input type="radio" id="no" name="no" value="no"><label for="no">No</label></th>
       </tr>
+      <tr>
+        <th><input type="checkbox" id="terms" name="terms" value="Terms">
+          <label for="terms">I agree to the terms & conditions</label>
+        <th><input type="submit" style="padding-right: 10px; padding-left: 10px; width: 100px; height: 50px; border-radius: 25px; background-color:#fce303; color: white;">
   </body>
 </html>
